@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# List of filenames
+files=(
+  "0-run"
+  "1-run_inline"
+  "2-print.py"
+  "3-print_number.py"
+  "4-print_float.py"
+  "5-print_string.py"
+  "6-concat.py"
+  "7-edges.py"
+  "8-concat_edges.py"
+  "9-easter_egg.py"
+  "100-write.py"
+  "101-compile"
+  "102-magic_calculation.py"
+)
+
+# Loop through each filename
+for name in "${files[@]}"; do
+  # Create an empty file
+  touch "$name"
+  
+  # Set executable permissions for the file
+  chmod +x "$name"
+  
+  # Determine if the filename ends with ".py"
+  if [[ $name == *.py ]]; then
+    # Add the shebang line for Python
+    echo '#!/usr/bin/python3' > "$name"
+  else
+    # Add the shebang line for Bash
+    echo '#!/usr/bin/bash' > "$name"
+  fi
+done
