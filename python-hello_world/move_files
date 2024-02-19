@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+
+# Loop through each file in the current directory
+for file in *; do
+  # Check if the file is not README.md
+  if [ "$file" != "README.md" ]; then
+    # Move the file to the python-hello_world directory
+    mv "$file" python-hello_world/
+  fi
+done
