@@ -1,4 +1,3 @@
 #!/usr/bin/python3
 number = 98
-string = " Battery street"
-print(str(number) + string)
+print("%d is the answer to everything" % number)
