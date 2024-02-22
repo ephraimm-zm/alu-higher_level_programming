@@ -3,8 +3,7 @@
 ## Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
-# General
-Why Python programming is awesome
+<br>Why Python programming is awesome
 <br>Who created Python
 <br>Who is Guido van Rossum
 <br>Where does the name ‘Python’ come from
