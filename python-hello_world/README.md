@@ -23,4 +23,4 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 <br>[4-print_float.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-hello_world/4-print_float.py) - Task to print a float with a precision of 2 digits
 <br>[5-print_string.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-hello_world/5-print_string.py) - Print a string three times, followed by its first 9 chars
 <br>[6-concat.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-hello_world/6-concat.py) - Concatenate two strings to print new string
-<br>
+<br>[7-edges.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-hello_world/7-edges.py) - Print only certain parts of the string in a variable
