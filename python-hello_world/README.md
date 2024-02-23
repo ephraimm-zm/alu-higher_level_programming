@@ -24,3 +24,8 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 <br>[5-print_string.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-hello_world/5-print_string.py) - Print a string three times, followed by its first 9 chars
 <br>[6-concat.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-hello_world/6-concat.py) - Concatenate two strings to print new string
 <br>[7-edges.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-hello_world/7-edges.py) - Print only certain parts of the string in a variable
+<br>[8-concat_edges.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-hello_world/8-concat_edges.py) - Manipulate a string by slicing and concatenating
+<br>[9-easter_egg.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-hello_world/9-easter_egg.py) - A python script that prints "The Zen of Python"
+<br>[100-write.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-hello_world/100-write.py) - A script that prints a string using wrtie from the sys module
+<br>[101-compile](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-hello_world/101-compile) - A script that compiles a Python scripth file
+<br>[102-magic_calculation.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-hello_world/102-magic_calculation.py) - A script that does some magic calculation
