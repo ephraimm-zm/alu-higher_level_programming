@@ -5,4 +5,4 @@ for i in range(122, 96, -1):
         result += "{}".format(chr(i))
     else:
         result += "{}".format(chr(i - 32))
-    print(result)
+    print(result, end="")
