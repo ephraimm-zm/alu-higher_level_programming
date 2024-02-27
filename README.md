@@ -3,6 +3,7 @@
 - [python-hello_world](https://github.com/ephraimm-zm/alu-higher_level_programming/tree/main/python-hello_world) - Basic programming with python
 - [python-if_else_loops_functions](https://github.com/ephraimm-zm/alu-higher_level_programming/tree/main/python-if_else_loops_functions) - Using If/Else statements, Loops and Functions in python
 - [python-import-modules](https://github.com/ephraimm-zm/alu-higher_level_programming/tree/main/python-import_modules) - Using imported functions and creating modules
+- [python-data_structures](https://github.com/ephraimm-zm/alu-higher_level_programming/tree/main/python-data_structures) - Introduction to data structures in python starting with Lists and Tuples
 
 # Requirements
 ## Python Scripts
