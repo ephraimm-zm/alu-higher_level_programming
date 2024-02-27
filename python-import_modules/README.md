@@ -9,7 +9,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - How to prevent code in your script from being executed when imported
 - How to use command line arguments with your Python programs
 
-## Descriptions
+## Description Of Tasks
 
 - [0-add.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-import_modules/0-add.py) - Program that imports an addition function from a file and uses that function to print a result.
 - [1-calculation.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-import_modules/1-calculation.py) - A program that imports different math functions and uses them to print different results.
