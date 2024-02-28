@@ -7,5 +7,5 @@ def uniq_add(my_list=[]):
         if number not in unique:
             unique[number] = True
             total += number
-    
+
     return total
