@@ -4,6 +4,7 @@
 - [python-if_else_loops_functions](https://github.com/ephraimm-zm/alu-higher_level_programming/tree/main/python-if_else_loops_functions) - Using If/Else statements, Loops and Functions in python
 - [python-import-modules](https://github.com/ephraimm-zm/alu-higher_level_programming/tree/main/python-import_modules) - Using imported functions and modules
 - [python-data_structures](https://github.com/ephraimm-zm/alu-higher_level_programming/tree/main/python-data_structures) - Introduction to data structures in python starting with Lists and Tuples
+- [python-more_data_structures](https://github.com/ephraimm-zm/alu-higher_level_programming/tree/main/python-more_data_structures) - Exploring sets, dictionaries, lambda functions, map, reduce and filter functions
 
 # Requirements
 ## Python Scripts
