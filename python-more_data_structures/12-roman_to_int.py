@@ -12,7 +12,7 @@ def roman_to_int(roman_string):
 
     for char in reversed(roman_string):
         value = roman_dict[char]
-        if value value < prev:
+        if value < prev:
             total -= value
         else:
             total += value
