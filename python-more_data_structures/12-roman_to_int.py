@@ -8,17 +8,14 @@ def roman_to_int(roman_string):
             'C': 100, 'D': 500, 'M': 1000
             }
     total = 0
-    i = 0
-    length = len(roman_string)
-    current = roman_dict[roman_string[i]]
-    following = roman_dict[roman_string[i+1]]
+    prev = 0
 
-    while i < length - 1:
-        if i + 1 < length and current < following:
-            total += following - current
-            i += 2
+    for char in reversed(roman_string):
+        value = roman_dict[char]
+        if value value < prev:
+            total -= value
         else:
-            total += current
-            i += 1
+            total += value
+            prev = value
 
     return total
