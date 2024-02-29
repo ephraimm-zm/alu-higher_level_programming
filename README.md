@@ -5,7 +5,7 @@
 - [python-import-modules](https://github.com/ephraimm-zm/alu-higher_level_programming/tree/main/python-import_modules) - Using imported functions and modules
 - [python-data_structures](https://github.com/ephraimm-zm/alu-higher_level_programming/tree/main/python-data_structures) - Introduction to data structures in python starting with Lists and Tuples
 - [python-more_data_structures](https://github.com/ephraimm-zm/alu-higher_level_programming/tree/main/python-more_data_structures) - Exploring sets, dictionaries, lambda functions, map, reduce and filter functions
-- [python-excpetion](https://github.com/ephraimm-zm/alu-higher_level_programming/tree/main/python-exceptions) - Exploring exceptions in python and how to handle them
+- [python-excpetions](https://github.com/ephraimm-zm/alu-higher_level_programming/tree/main/python-exceptions) - Exploring exceptions in python and how to handle them
 
 # Requirements
 ## Python Scripts
