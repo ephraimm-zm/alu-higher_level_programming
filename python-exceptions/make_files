@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/python3
 
 names=(
     0-safe_print_list.py
