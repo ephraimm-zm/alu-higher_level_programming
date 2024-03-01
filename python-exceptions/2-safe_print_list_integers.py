@@ -8,5 +8,8 @@ def safe_print_list_integers(my_list=[], x=0):
                 count += 1
         except Exception:
             pass
+
+    if count == 0:
+        raise ValueError("No ints to print")
     print()
     return count
