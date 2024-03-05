@@ -4,8 +4,8 @@
 This script defines a Square class representing a square shape.
 """
 
-class Square:
-    
+
+class Square:    
     """
     Represents a square object.
 
