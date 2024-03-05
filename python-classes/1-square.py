@@ -16,12 +16,12 @@ class Square:
     __init__: Initializes a Square object with a given size.
     """
 
-def __init__(self, size):
-    """
-    Initializes a Square object with a given size
+    def __init__(self, size):
+        """
+        Initializes a Square object with a given size
 
-    Parameters:
-    size (int): The size of the square/
-    """
+        Parameters:
+        size (int): The size of the square/
+        """
 
-    self.__size = size
+        self.__size = size
