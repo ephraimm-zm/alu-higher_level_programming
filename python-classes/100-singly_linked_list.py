@@ -23,17 +23,16 @@ class Node:
         """
         self.__data = data
         self.__next_node = next_node
-
+"""
     @property
     def data(self):
         """
-        Getter method for the data stored in the node.
-
-        Returns:
-        The data in the node.
+        #Getter method for the data stored in the node
+        #Returns:
+        #The data in the node.
         """
         return (self.__data)
-
+"""
     @data.setter
     def data(self, value):
         """
@@ -45,7 +44,10 @@ class Node:
         Raises:
         TypeError: If the value is not an int
         """
-        raise TypeError("data must be an integer")
+        if isinstance(value, int):
+            self.__data = value
+        else:
+            raise TypeError("data must be an integer")
 
     @property
     def next_node(self):
