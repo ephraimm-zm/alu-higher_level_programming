@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
-A script that defines a singly linked list
+A script that defines a Node class singly linked list
 """
+
 
 class Node:
     """
@@ -12,6 +13,7 @@ class Node:
     __next_node: Reference to the next node in the list.
     """
 
+
     def __init__(self, data, next_node=None):
         """
         Initializes a Node with the given data and next node reference.
@@ -20,6 +22,8 @@ class Node:
         data: The data to be stored in the node
         next_node: The next node in the list
         """
+
+
         self.__data = data
         self.__next_node = next_node
 
@@ -30,6 +34,8 @@ class Node:
             Returns:
             The data in the node.
             """
+
+
             return self.__data
 
         @data.setter
@@ -43,6 +49,8 @@ class Node:
             Raises:
             TypeError: If the value is not an int
             """
+
+
             if isinstance(value, int):
                 self.__data = value
             else:
@@ -56,6 +64,8 @@ class Node:
             Returns:
             Reference to the next node.
             """
+
+
             return self.__next_node
 
         @next_node.setter
@@ -69,6 +79,8 @@ class Node:
             Raises:
             TypeError: If the value is not a Node object.
             """
+
+
             if value is None or isinstance(value, Node):
                 self.__next_node = value
             else:
@@ -82,6 +94,7 @@ class SinglyLinkedList:
     __head: The head node of the list.
     """
 
+
     def __init__(self):
         """
         Initializes an empty SinglyLinkedList.
@@ -92,6 +105,8 @@ class SinglyLinkedList:
         """
         Returns a string representation of the linked list.
         """
+
+
         result = ""
         current = self.__head
         while current:
