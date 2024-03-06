@@ -13,7 +13,6 @@ class Node:
     __next_node: Reference to the next node in the list.
     """
 
-
     def __init__(self, data, next_node=None):
         """
         Initializes a Node with the given data and next node reference.
@@ -22,69 +21,60 @@ class Node:
         data: The data to be stored in the node
         next_node: The next node in the list
         """
-
-
         self.__data = data
         self.__next_node = next_node
 
-        @property
-        def data(self):
-            "Getter method for the data stored in the node.
+    @property
+    def data(self):
+        """
+        Getter method for the data stored in the node.
 
-            Returns:
-            The data in the node.
-            """
+        Returns:
+        The data in the node.
+        """
+        return self.__data
 
+    @data.setter
+    def data(self, value):
+        """
+        Setter method for setting the data stored in the node.
 
-            return self.__data
+        Params:
+        value: The new value for the data.
 
-        @data.setter
-        def data(self, value):
-            """
-            Setter method for setting the data stored in the node.
+        Raises:
+        TypeError: If the value is not an int
+        """
+        if isinstance(value, int):
+            self.__data = value
+        else:
+            raise TypeError("data must be an integer")
 
-            Params:
-            value: The new value for the data.
+    @property
+    def next_node(self):
+        """
+        Getter method for the next_node.
 
-            Raises:
-            TypeError: If the value is not an int
-            """
+        Returns:
+        Reference to the next node.
+        """
+        return self.__next_node
 
+    @next_node.setter
+    def next_node(self, value):
+        """
+        Setter method for setting the reference to the next node.
 
-            if isinstance(value, int):
-                self.__data = value
-            else:
-                raise TypeError("data must be an integer")
+        Params:
+        value: The reference to the next node.
 
-        @property
-        def next_node(self):
-            """
-            Getter method for the next_node.
-
-            Returns:
-            Reference to the next node.
-            """
-
-
-            return self.__next_node
-
-        @next_node.setter
-        def next_node(self, value):
-            """
-            Setter method for setting the reference to the next node.
-
-            Params:
-            value: The reference to the next node.
-
-            Raises:
-            TypeError: If the value is not a Node object.
-            """
-
-
-            if value is None or isinstance(value, Node):
-                self.__next_node = value
-            else:
-                raise TypeError("next_node must be a Node object")
+        Raises:
+        TypeError: If the value is not a Node object.
+        """
+        if value is None or isinstance(value, Node):
+            self.__next_node = value
+        else:
+            raise TypeError("next_node must be a Node object")
 
 class SinglyLinkedList:
     """
@@ -93,7 +83,6 @@ class SinglyLinkedList:
     Attributes:
     __head: The head node of the list.
     """
-
 
     def __init__(self):
         """
@@ -105,8 +94,6 @@ class SinglyLinkedList:
         """
         Returns a string representation of the linked list.
         """
-
-
         result = ""
         current = self.__head
         while current:
