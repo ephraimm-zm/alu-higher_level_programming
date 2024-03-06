@@ -45,9 +45,7 @@ class Node:
         Raises:
         TypeError: If the value is not an int
         """
-        if not isinstance(value, int):
-            raise TypeError("data must be an integer")
-        self.__data = value
+        raise TypeError("data must be an integer")
 
     @property
     def next_node(self):
