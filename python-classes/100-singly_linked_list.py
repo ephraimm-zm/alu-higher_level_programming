@@ -98,7 +98,7 @@ class SinglyLinkedList:
         result = ""
         current = self.__head
         while current:
-            result += str(current.data) + "\n"
+            result += str(current.data)
             current = current.next_node
         return result
 
