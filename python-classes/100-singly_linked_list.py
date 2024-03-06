@@ -32,7 +32,7 @@ class Node:
         Returns:
         The data in the node.
         """
-        return self.__data
+        return (self.__data)
 
     @data.setter
     def data(self, value):
