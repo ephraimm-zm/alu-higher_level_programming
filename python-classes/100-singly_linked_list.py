@@ -23,16 +23,16 @@ class Node:
         """
         self.__data = data
         self.__next_node = next_node
-"""
+
     @property
     def data(self):
         """
-        #Getter method for the data stored in the node
-        #Returns:
-        #The data in the node.
+        Getter method for the data stored in the node
+        Returns:
+        The data in the node.
         """
         return (self.__data)
-"""
+
     @data.setter
     def data(self, value):
         """
