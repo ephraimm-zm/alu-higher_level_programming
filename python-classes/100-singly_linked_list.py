@@ -7,7 +7,7 @@ A script that defines a Node class singly linked list
 class Node:
     """
     Represents a node in a singly linked list.
-    
+
     Attributes:
     __data: The data stored in the node.
     __next_node: Reference to the next node in the list.
@@ -75,6 +75,7 @@ class Node:
             self.__next_node = value
         else:
             raise TypeError("next_node must be a Node object")
+
 
 class SinglyLinkedList:
     """
