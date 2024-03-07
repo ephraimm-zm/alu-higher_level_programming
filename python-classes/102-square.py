@@ -3,6 +3,7 @@
 Initialize a Square object with the given size.
 """
 
+
 class Square:
     def __init__(self, size):
         """
