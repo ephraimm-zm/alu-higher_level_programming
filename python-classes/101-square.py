@@ -95,8 +95,11 @@ class Square:
             return
         for _ in range(self.position[1]):
             print()
-        for _ in range(self.size):
-            print(" " * self.position[0] + "#" * self.size)
+        for line_num in range(self.size):
+            if line_num == self.size - 1:
+                print(" " * self.position[0] + "#" * self.size, end="")
+            else:
+                print(" " * self.position[0] + "#" * self.size)
 
     def __str__(self):
         """
