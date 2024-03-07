@@ -12,7 +12,6 @@ class Square:
     size (int): The size of the squares sides
     """
 
-
     def __init__(self, size):
         """
         Args:
@@ -71,7 +70,7 @@ class Square:
 
     def __ne__(self, other):
         """
-        Check if this square is not equal to another square based on their areas
+        Check if this square is not equal
 
         Args:
         other (Square): The other square to compare.
