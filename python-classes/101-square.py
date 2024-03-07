@@ -98,12 +98,12 @@ class Square:
         for _ in range(self.size):
             print(" " * self.position[0] + "#" * self.size)
 
-            def __str__(self):
-                """
-                Returns a string rep of the square
+    def __str__(self):
+    """
+    Returns a string rep of the square
 
-                Returns:
-                str: The string rep of the square.
-                """
-                self.my_print()
-                return ""
+    Returns:
+    str: The string rep of the square.
+    """
+    self.my_print()
+    return ""
