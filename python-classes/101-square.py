@@ -91,7 +91,7 @@ class Square:
         Prints a graphical representation of the square.
         """
         if self.size == 0:
-            print()
+            print("")
             return
         for _ in range(self.position[1]):
             print()
