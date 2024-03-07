@@ -5,6 +5,9 @@ Some magic calculation
 
 
 import math
+"""
+Imports some ting
+"""
 
 class MagicClass:
     def __init__(self, radius):
