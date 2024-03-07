@@ -90,7 +90,6 @@ class Square:
         """
         Prints a graphical representation of the square.
         """
-        result = ""
         if self.size == 0:
             print()
             return
