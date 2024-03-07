@@ -96,7 +96,7 @@ class Square:
         for _ in range(self.position[1]):
             print()
         for _ in range(self.size):
-            print(" " * self.position[0] + "#" * self.size, end="")
+            print(" " * self.position[0] + "#" * self.size)
 
     def __str__(self):
         """
