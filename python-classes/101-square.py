@@ -90,13 +90,15 @@ class Square:
         """
         Prints a graphical representation of the square.
         """
+        result = ""
         if self.size == 0:
             print()
             return
         for _ in range(self.position[1]):
             print()
         for _ in range(self.size):
-            print(" " * self.position[0] + "#" * self.size)
+            result = " " * self.position[0] + "#" * self.size
+            return result[:-1]
 
     def __str__(self):
         """
