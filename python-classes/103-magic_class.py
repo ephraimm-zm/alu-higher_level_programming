@@ -8,6 +8,10 @@ This module defines a class, MagicClass, which performs some magical calculation
 import math
 
 class MagicClass:
+    """
+    create a class MagicClass
+    """
+
     def __init__(self, radius):
         """
         Initialize MagicClass with a given radius.
