@@ -8,10 +8,6 @@ This module defines a class, MagicClass, which performs some magical calculation
 import math
 
 class MagicClass:
-    """
-    Class to do magic calc
-    """
-
     def __init__(self, radius):
         """
         Initialize MagicClass with a given radius.
@@ -21,7 +17,7 @@ class MagicClass:
         """
         self.__radius = 0
         if type(radius) is not int or \
-                type(radius) is not float:
+                type(radius) is not float:  # Fixed typo here
                     raise TypeError("radius must be a number")
         self.__radius = radius
 
@@ -42,4 +38,3 @@ class MagicClass:
             float: The circumference of the circle.
         """
         return 2 * math.pi * self.__radius
-
