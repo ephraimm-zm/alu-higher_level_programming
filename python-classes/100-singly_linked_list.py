@@ -21,8 +21,8 @@ class Node:
         data: The data to be stored in the node
         next_node: The next node in the list
         """
-        self.__data = data
-        self.__next_node = next_node
+        self.data = data
+        self.next_node = next_node
 
     @property
     def data(self):
