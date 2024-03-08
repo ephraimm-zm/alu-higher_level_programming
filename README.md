@@ -6,7 +6,7 @@
 - [python-data_structures](https://github.com/ephraimm-zm/alu-higher_level_programming/tree/main/python-data_structures) - Introduction to data structures in python starting with Lists and Tuples
 - [python-more_data_structures](https://github.com/ephraimm-zm/alu-higher_level_programming/tree/main/python-more_data_structures) - Exploring sets, dictionaries, lambda functions, map, reduce and filter functions
 - [python-excpetions](https://github.com/ephraimm-zm/alu-higher_level_programming/tree/main/python-exceptions) - Exploring exceptions in python and how to handle them
-
+- [python-classes](https://github.com/ephraimm-zm/alu-higher_level_programming/tree/main/python-classes) - Introduction to Classes and Objects in python
 # Requirements
 ## Python Scripts
 - Allowed editors: vi, vim, emacs
