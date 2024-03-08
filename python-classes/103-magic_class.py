@@ -12,7 +12,7 @@ class MagicClass:
     create a class MagicClass
     """
 
-    def __init__(self, radius):
+    def __init__(self, radius=0):
         """
         Initialize MagicClass with a given radius.
 
