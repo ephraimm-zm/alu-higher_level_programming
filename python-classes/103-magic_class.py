@@ -2,10 +2,10 @@
 """
 Some magic calculation
 
-This module defines a class, MagicClass, which performs some magical calculations.
 """
 
 import math
+
 
 class MagicClass:
     """
