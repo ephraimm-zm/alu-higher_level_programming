@@ -90,4 +90,3 @@ class Rectangle:
         Return a string representation for recreation.
         """
         return f"Rectangle({self.__width}, {self.__height})"
-
