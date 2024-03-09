@@ -101,4 +101,4 @@ class Rectangle:
         result = ""
         for _ in range(self.__height):
             result += "#" * self.__width + "\n"
-        return result[:-1]
+        print(f"{result[:-1]}")
