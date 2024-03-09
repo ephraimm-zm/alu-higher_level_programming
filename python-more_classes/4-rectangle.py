@@ -64,7 +64,7 @@ class Rectangle:
         """
         Calculate the area of the rectangle.
         """
-        return self.__width * self__height
+        return self.__width * self.__height
 
     def perimeter(self):
         """
@@ -90,3 +90,4 @@ class Rectangle:
         Return a string representation for recreation.
         """
         return f"Rectangle({self.__width}, {self.__height})"
+
