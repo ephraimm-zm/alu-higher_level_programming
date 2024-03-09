@@ -27,7 +27,7 @@ class Rectangle:
         """
         Set the width of the rectangle.
         """
-        if value is not isinstance(value, int):
+        if is not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
@@ -45,7 +45,7 @@ class Rectangle:
         """
         Set the height of the rectangle.
         """
-        if value is not isinstance(value, int):
+        if is not isinstance(value, int):
             raise TypeError("height must be an integer")
         if height < 0:
             raise ValueError("height must be >= 0")
@@ -61,7 +61,7 @@ class Rectangle:
         """
         Calculate the perimeter of the rectangle.
         """
-        if self.__width or self.__height == 0:
+        if self.__width == 0 or self.__height == 0:
             return 0
         return 2 * (self.__width + self.__height)
 
@@ -69,7 +69,7 @@ class Rectangle:
         """
         Return a string representation of the rectangle.
         """
-        if width or height == 0:
+        if width == 0 or height == 0:
             return
         result = ""
         for _ in range(self.__height):
