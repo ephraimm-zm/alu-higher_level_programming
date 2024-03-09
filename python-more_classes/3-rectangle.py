@@ -1,7 +1,8 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Prints a square representation using #
 """
+
 
 class Rectangle:
     """
