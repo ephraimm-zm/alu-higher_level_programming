@@ -50,7 +50,7 @@ class Rectangle:
         def height(self, value):
             """
             Set the height of the rectangle.
-            
+
             Args:
             value (int): The height value to set.
             """
