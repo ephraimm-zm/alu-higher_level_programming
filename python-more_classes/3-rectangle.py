@@ -97,8 +97,8 @@ class Rectangle:
             str: A string representation of the rectangle.
         """
         if self.__width == 0 or self.__height == 0:
-            return
+            return ""
         result = ""
         for _ in range(self.__height):
             result += "#" * self.__width + "\n"
-        print(f"{result[:-1]}")
+        return result[:-1]
