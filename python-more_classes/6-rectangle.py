@@ -8,6 +8,8 @@ class Rectangle:
     """
     A class representing a rectangle.
     """
+    number_of_rectangles = 0
+
     def __init__(self, width=0, height=0):
         """
         Initialize the rectangle with w and h
@@ -18,6 +20,7 @@ class Rectangle:
         """
         self.width = width
         self.height = height
+        Rectangle.number_of_rectangles += 1
 
     @property
     def width(self):
@@ -97,3 +100,11 @@ class Rectangle:
         Prints message when an instance of rectangle is deleted
         """
         print("Bye rectangle...")
+        Rectangle.number_of_rectangles -= 1
+
+    @classmethod
+    def number_of_instances(cls):
+        """
+        Returns the number of instances of Rectangle
+        """
+        return cls.number_of_rectangles
