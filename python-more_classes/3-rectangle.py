@@ -11,7 +11,7 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         """
         Initialize the rectangle with given width and height.
-        
+
         Args:
             width (int): The width of the rectangle.
             height (int): The height of the rectangle.
@@ -102,4 +102,3 @@ class Rectangle:
         for _ in range(self.__height):
             result += "#" * self.__width + "\n"
         return result[:-1]
-
