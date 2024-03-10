@@ -101,10 +101,3 @@ class Rectangle:
         """
         print("Bye rectangle...")
         Rectangle.number_of_rectangles -= 1
-
-    @classmethod
-    def number_of_instances(cls):
-        """
-        Returns the number of instances of Rectangle
-        """
-        return cls.number_of_rectangles
