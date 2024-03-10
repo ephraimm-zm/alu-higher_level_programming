@@ -119,4 +119,7 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
-        pass
+        """
+        creates a square rectangle with equal height and width
+        """
+        return cls(size, size)
