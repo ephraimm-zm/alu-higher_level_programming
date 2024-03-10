@@ -8,7 +8,7 @@ class Rectangle:
     """
     A class representing a rectangle.
     """
-    number_of_rectangles = 0
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         """
@@ -20,7 +20,7 @@ class Rectangle:
         """
         self.width = width
         self.height = height
-        Rectangle.number_of_rectangles += 1
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -100,4 +100,4 @@ class Rectangle:
         Prints message when an instance of rectangle is deleted
         """
         print("Bye rectangle...")
-        Rectangle.number_of_rectangles -= 1
+        Rectangle.number_of_instances -= 1
