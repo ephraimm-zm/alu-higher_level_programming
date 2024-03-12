@@ -50,7 +50,7 @@ files=(
 
 for file in "${files[@]}"; do
     touch "$file"
-    if [[ $file == *.txt ]]; then
+    if [[ $file == *.py ]]; then
         chmod +x "$file"
         echo '#!/usr/bin/python3' >> "$file"
     fi
