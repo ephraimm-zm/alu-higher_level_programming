@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# Define a list of files and their corresponding content
+file_contents=(
+    "5-answer.txt - No"
+    "6-answer.txt - True"
+    "7-answer.txt - True"
+    "8-answer.txt - True"
+    "9-answer.txt - True"
+    "10-answer.txt - True"
+    "10-answer.txt - True"
+    "11-answer.txt - True"
+    "12-answer.txt - True"
+    "13-answer.txt - True"
+    "14-answer.txt - 1, 2, 3, 4"
+    "15-answer.txt - 1, 2, 3, 4"
+    "16-answer.txt - 2"
+    "17-answer.txt - 1, 2, 3, 4"
+    "18-answer.txt - 4, 5, 6"
+)
+
+# Loop through each entry in the file_contents array
+for entry in "${file_contents[@]}"; do
+    # Extract filename and content from each entry
+    file_name="${entry%% - *}"
+    content="${entry#* - }"
+
+    # Look up the file in the current directory and overwrite its content
+    if [ -f "$file_name" ]; then
+        # Remove the opening and closing quotation marks from the content
+        content="${content//\"}"
+        # Overwrite the content of the file with the new content
+        echo "$content" > "$file_name"
+        echo "Added content to $file_name"
+    else
+        echo "File $file_name not found"
+    fi
+done
+
