@@ -1,0 +1,40 @@
+#!/bin/bash
+
+# Define the files array
+files=(
+"0-lookup.py"
+"1-my_list.py"
+"2-is_same_class.py"
+"3-is_kind_of_class.py"
+"4-inherits_from.py"
+"5-base_geometry.py"
+"6-base_geometry.py"
+"7-base_geometry.py"
+"8-rectangle.py"
+"9-rectangle.py"
+"10-square.py"
+"11-square.py"
+"100-my_int.py"
+"101-add_attribute.py"
+)
+
+# Define the files_test array
+files_test=(
+"1-my_list.txt"
+"7-base_geometry.txt"
+)
+
+# Create and set permissions for files
+for file in "${files[@]}"; do
+    touch "$file"
+    chmod +x "$file"
+    echo "#!/usr/bin/python3" > "$file"
+done
+
+# Create files in the tests directory
+mkdir -p tests
+cd tests || exit
+for file in "${files_test[@]}"; do
+    touch "$file"
+done
+
