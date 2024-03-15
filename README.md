@@ -8,6 +8,7 @@
 - [python-excpetions](https://github.com/ephraimm-zm/alu-higher_level_programming/tree/main/python-exceptions) - Exploring exceptions in python and how to handle them
 - [python-classes](https://github.com/ephraimm-zm/alu-higher_level_programming/tree/main/python-classes) - Introduction to Classes and Objects in python
 - [python-more_classes](https://github.com/ephraimm-zm/alu-higher_level_programming/tree/main/python-more_classes) - Solidifying understanding of classes and objects in python
+- [python-everything_is_object](https://github.com/ephraimm-zm/alu-higher_level_programming/tree/main/python-everything_is_object) - A project containing questions about Python’s specificity.
 # Requirements
 ## Python Scripts
 - Allowed editors: vi, vim, emacs
