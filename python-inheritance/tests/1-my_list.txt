@@ -1,0 +1,17 @@
+from my_module import MyList
+
+# Test case for sorting an empty list
+my_list_empty = MyList()
+my_list_empty.print_sorted()
+assert my_list_empty == []
+
+# Test case for sorting a list with one element
+my_list_one_element = MyList([1])
+my_list_one_element.print_sorted()
+assert my_list_one_element == [1]
+
+# Test case for sorting a list with multiple elements
+my_list_multiple_elements = MyList([3, 1, 2])
+my_list_multiple_elements.print_sorted()
+assert my_list_multiple_elements == [1, 2, 3]
+
