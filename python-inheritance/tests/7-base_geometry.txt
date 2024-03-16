@@ -1,73 +1,51 @@
-File tests for BaseGeometry class
-=================================
+>>> BaseGeo = __import__('7-base_geometry').BaseGeometry
 
-Usage:
-    >>> base_geometry = __import__('7-base_geometry').BaseGeometry()
+>>> base = BaseGeo()
 
-Test Case: Call area method (not implemented)
----------------------------------------------
+>>> base.area()
+Traceback (most recent call last):
+Exception: area() is not implemented
 
-::
-    >>> base_geometry.area()
-    Traceback (most recent call last):
-    Exception: area() is not implemented
+>>> base.integer_validator()
+Traceback (most recent call last):
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
-Test Case: Valid integer value for integer_validator method
-------------------------------------------------------------
+>>> base.integer_validator("age")
+Traceback (most recent call last):
+TypeError: integer_validator() missing 1 required positional argument: 'value'
 
-::
-    >>> base_geometry.integer_validator("test", 5)
+>>> base.integer_validator("age", (4,))
+Traceback (most recent call last):
+TypeError: age must be an integer
 
-Test Case: Invalid type for integer_validator method
-------------------------------------------------------
+>>> base.integer_validator("my_int", 12)
 
-::
-    >>> base_geometry.integer_validator("test", "string")
-    Traceback (most recent call last):
-    TypeError: test must be an integer
+>>> base.integer_validator("width", 89)
 
-Test Case: Invalid value for integer_validator method
-------------------------------------------------------
+>>> base.integer_validator("name", "John")
+Traceback (most recent call last):
+TypeError: name must be an integer
 
-::
-    >>> base_geometry.integer_validator("test", -5)
-    Traceback (most recent call last):
-    ValueError: test must be greater than 0
+>>> base.integer_validator("age", 0)
+Traceback (most recent call last):
+ValueError: age must be greater than 0
 
-Test Case: Invalid name type for integer_validator method
------------------------------------------------------------
+>>> base.integer_validator("distance", -4)
+Traceback (most recent call last):
+ValueError: distance must be greater than 0
 
-::
-    >>> base_geometry.integer_validator(123, 5)
-    Traceback (most recent call last):
-    TypeError: name must be a string
+>>> base.integer_validator("age", [3])
+Traceback (most recent call last):
+TypeError: age must be an integer
 
-Test Case: Check module documentation
---------------------------------------
+>>> base.integer_validator("age", True)
+Traceback (most recent call last):
+TypeError: age must be an integer
 
-::
-    >>> docs = __import__('7-base_geometry').__doc__
-    >>> docs is not None and len(docs) > 1
-    True
+>>> base.integer_validator("age", {3, 4})
+Traceback (most recent call last):
+TypeError: age must be an integer
 
-Test Case: Check class documentation
--------------------------------------
-
-::
-    >>> docs = __import__('7-base_geometry').BaseGeometry.__doc__
-    >>> docs is not None and len(docs) > 1
-    True
-
-Test Case: Check method documentation
---------------------------------------
-
-::
-    >>> docs = __import__('7-base_geometry').BaseGeometry.area.__doc__
-    >>> docs is not None and len(docs) > 1
-    True
-
-::
-    >>> docs = __import__('7-base_geometry').BaseGeometry.integer_validator.__doc__
-    >>> docs is not None and len(docs) > 1
-    True
-
+>>> base.integer_validator("age", None)
+Traceback (most recent call last):
+TypeError: age must be an integer
