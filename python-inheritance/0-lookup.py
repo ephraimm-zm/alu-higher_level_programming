@@ -2,10 +2,10 @@
 """
 A function to lookup attributes and methods of an object.
 """
+
+
 def lookup(obj):
     """
-    Return a list of available attributes and methods of the given object.
-
     Args:
     obj: The object to inspect
 
