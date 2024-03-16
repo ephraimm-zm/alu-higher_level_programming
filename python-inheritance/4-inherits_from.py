@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 if obj is instance of a class that inherited
-from the specified class.
+frm the specified class.
 """
 
 
