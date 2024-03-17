@@ -4,7 +4,7 @@ Appends a string at the end of a text file.
 """
 
 
-def append_file(filename="", text=""):
+def append_write(filename="", text=""):
     """
     Appends the specified text to the end of the specified file.
 
