@@ -2,9 +2,8 @@
 """
 Converts a string object to JSON
 """
-
-
 import json
+
 
 def to_json_string(my_obj):
     """
