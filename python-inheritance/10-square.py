@@ -21,7 +21,7 @@ class Square(Rectangle):
         Args:
             size (int): The given size of the square/
         """
-        super().__init__("size", size)
+        super().__init__(size, size)
         self.__size = size
 
     def area(self):
