@@ -9,6 +9,7 @@
 - [python-classes](https://github.com/ephraimm-zm/alu-higher_level_programming/tree/main/python-classes) - Introduction to Classes and Objects in python
 - [python-more_classes](https://github.com/ephraimm-zm/alu-higher_level_programming/tree/main/python-more_classes) - Solidifying understanding of classes and objects in python
 - [python-everything_is_object](https://github.com/ephraimm-zm/alu-higher_level_programming/tree/main/python-everything_is_object) - A project containing questions about Python’s specificity.
+- [python-input_output](https://github.com/ephraimm-zm/alu-higher_level_programming/tree/main/python-input_output) - Project to understand inputting and outputting files in python
 # Requirements
 ## Python Scripts
 - Allowed editors: vi, vim, emacs
