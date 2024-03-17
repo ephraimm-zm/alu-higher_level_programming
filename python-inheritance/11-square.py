@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module for task 10.square.pu
+Module for task 11.square.pu
 """
 
 Rectangle = __import__('9-rectangle').Rectangle
@@ -32,3 +32,12 @@ class Square(Rectangle):
             int: The area
         """
         return self.__size ** 2
+
+    def __str__(self):
+        """
+        Prints string representation of the square
+
+        Returns:
+            str: The string
+        """
+        return f"[Square] {self.__size}/{self.__size}"
