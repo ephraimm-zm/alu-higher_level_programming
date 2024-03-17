@@ -14,4 +14,4 @@ def load_from_json_file(filename):
         obj: The python object deserialized from the JSON file
     """
     with open(filename, 'r') as file:
-        return json.lead(file)
+        return json.load(file)
