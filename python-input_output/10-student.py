@@ -1,19 +1,28 @@
 #!/usr/bin/python3
-"""define class square"""
+"""
+Module for task 9
+"""
 
 
-class Square:
-    """define empty class square"""
+class Student:
+    """
+    Student class
+    """
 
-    def __init__(self, size=0):
-        """define __init__ method"""
-        if type(size) is not int:
-            raise TypeError('size must be an integer')
-        elif size < 0:
-            raise ValueError('size must be >= 0')
-        else:
-            self.__size = size
+    def __init__(self, first_name, last_name, age):
+        """
+        Args:
+            first_name (str): First name of student
+            last_name (str): Last name of student
+            age (int): Age of the student
+        """
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
 
-    def area(self):
-        """define area method"""
-        return self.__size ** 2
+    def to_json(self):
+        """
+        Returns:
+            dict: Dictionary representation of Student instance
+        """
+        return self.__dict__
