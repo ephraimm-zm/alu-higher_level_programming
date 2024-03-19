@@ -53,20 +53,20 @@ def print_stats(total_file_size, status_counts):
 
 def main():
     """
-    Main function to read log lines from standard input
+    Main function to read log lines from standard input, process them, and print statistics.
     """
-    lines = []
+    total_file_size = 0
+    status_counts = {'200': 0, '301': 0, '400': 0, '401': 0, '403': 0, '404': 0, '405': 0, '500': 0}
+
     try:
         for line in sys.stdin:
-            lines.append(line.strip())
-            if len(lines) == 10:
-                total_file_size, status_counts = process_log(lines)
+            total_file_size, status_counts = process_log(line.strip(), total_file_size, status_counts)
+            if total_file_size > 0:
                 print_stats(total_file_size, status_counts)
-                lines = []
+                total_file_size = 0
+                status_counts = {'200': 0, '301': 0, '400': 0, '401': 0, '403': 0, '404': 0, '405': 0, '500': 0}
     except KeyboardInterrupt:
-        if lines:
-            total_file_size, status_counts = process_log(lines)
-            print_stats(total_file_size, status_counts)
+        pass
 
 if __name__ == "__main__":
     main()
