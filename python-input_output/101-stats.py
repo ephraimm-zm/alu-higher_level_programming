@@ -5,46 +5,36 @@ Script for task 14
 
 import sys
 
-def process_log(lines):
+def process_log(line, total_file_size, status_counts):
     """
-    Process the log lines and compute totals
+    Process a single log line and update total file size and status code counts.
 
     Args:
-        lines (list): List of log lines to process.
+        line (str): A single log line.
+        total_file_size (int): Total size of files.
+        status_counts (dict): Dictionary containing counts of different status codes.
 
     Returns:
-        tuple: A tuple containing the totals
+        tuple: A tuple containing the updated total file size and status code counts.
     """
-    total_file_size = 0
-    status_counts = {
-            '200': 0,
-            '301': 0,
-            '400': 0,
-            '401': 0,
-            '403': 0,
-            '404': 0,
-            '405': 0,
-            '500': 0
-            }
+    parts = line.split()
 
-    for line in lines:
-        parts = line.split()
-        if len(parts) >= 7:
-            file_size = int(parts[-1])
-            total_file_size += file_size
-            status_code = parts[-2]
-            if status_code in status_counts:
-                status_counts[status_code] += 1
+    if len(parts) >= 7:
+        file_size = int(parts[-1])
+        total_file_size += file_size
+        status_code = parts[-2]
+        if status_code in status_counts:
+            status_counts[status_code] += 1
     
     return total_file_size, status_counts
 
 def print_stats(total_file_size, status_counts):
     """
-    Print the statistics including totals.
+    Print the statistics for status codes with counts greater than 0.
 
     Args:
         total_file_size (int): Total size of files.
-        status_counts (dict): Dictionary containing totsld
+        status_counts (dict): Dictionary containing counts of different status codes.
     """
     print(f"File size: {total_file_size}")
     for status_code, count in status_counts.items():
@@ -61,10 +51,10 @@ def main():
     try:
         for line in sys.stdin:
             total_file_size, status_counts = process_log(line.strip(), total_file_size, status_counts)
-            if total_file_size > 0:
+            if total_file_size > 0:  # Only print if there's data
                 print_stats(total_file_size, status_counts)
-                total_file_size = 0
-                status_counts = {'200': 0, '301': 0, '400': 0, '401': 0, '403': 0, '404': 0, '405': 0, '500': 0}
+                total_file_size = 0  # Reset total file size
+                status_counts = {'200': 0, '301': 0, '400': 0, '401': 0, '403': 0, '404': 0, '405': 0, '500': 0}  # Reset status counts
     except KeyboardInterrupt:
         pass
 
