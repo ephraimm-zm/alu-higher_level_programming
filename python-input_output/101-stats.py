@@ -1,6 +1,10 @@
-#!/usr/bin/bash
+#!/usr/bin/python3
 import sys
 from collections import defaultdict
+"""
+Soluion for task 101
+"""
+
 
 def compute_metrics(lines):
     """
@@ -52,5 +56,4 @@ def main():
         total_file_size, status_counts = compute_metrics(lines)
         print_metrics(total_file_size, status_counts)
 
-if __name__ == "__main__":
-    main()
+
