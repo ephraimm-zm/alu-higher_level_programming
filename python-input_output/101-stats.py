@@ -47,16 +47,23 @@ def main():
     """
     total_file_size = 0
     status_counts = {'200': 0, '301': 0, '400': 0, '401': 0, '403': 0, '404': 0, '405': 0, '500': 0}
+    line_counter = 0
 
     try:
         for line in sys.stdin:
             total_file_size, status_counts = process_log(line.strip(), total_file_size, status_counts)
-            if total_file_size > 0:  # Only print if there's data
+            line_counter += 1
+            if line_counter == 10:
                 print_stats(total_file_size, status_counts)
                 total_file_size = 0  # Reset total file size
                 status_counts = {'200': 0, '301': 0, '400': 0, '401': 0, '403': 0, '404': 0, '405': 0, '500': 0}  # Reset status counts
+                line_counter = 0  # Reset line counter
     except KeyboardInterrupt:
         pass
+
+    # Print statistics for the remaining lines if there are any
+    if line_counter > 0:
+        print_stats(total_file_size, status_counts)
 
 if __name__ == "__main__":
     main()
