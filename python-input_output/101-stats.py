@@ -27,7 +27,6 @@ def process_log(lines):
             if status_code in status_counts:
                 status_counts[status_code] += 1
     
-    return total_file_size, status_counts
 
 def print_stats(total_file_size, status_counts):
     """
@@ -48,22 +47,21 @@ def main():
     """
     total_file_size = 0
     status_counts = {'200': 0, '301': 0, '400': 0, '401': 0, '403': 0, '404': 0, '405': 0, '500': 0}
-    line_counter = 0
+    lines = []
 
     try:
         for line in sys.stdin:
-            total_file_size, status_counts = process_log(line.strip(), total_file_size, status_counts)
-            line_counter += 1
-            if line_counter == 10:
+            lines.append(line.strip())
+            if len(lines) == 10:
+                total_file_size, status_counts = process_log(lines)
                 print_stats(total_file_size, status_counts)
-                total_file_size = 0  # Reset total file size
-                status_counts = {'200': 0, '301': 0, '400': 0, '401': 0, '403': 0, '404': 0, '405': 0, '500': 0}  # Reset status counts
-                line_counter = 0  # Reset line counter
+                lines = []
     except KeyboardInterrupt:
         pass
 
     # Print statistics for the remaining lines if there are any
-    if line_counter > 0:
+    if lines:
+        total_file_size, status_counts = process_log(lines)
         print_stats(total_file_size, status_counts)
 
 if __name__ == "__main__":
