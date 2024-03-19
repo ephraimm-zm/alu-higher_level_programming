@@ -5,26 +5,27 @@ Script for task 14
 
 import sys
 
-def process_log(line, total_file_size, status_counts):
+def process_log(lines):
     """
-    Process a single log line and update total file size and status code counts.
+    Process the log lines and compute total file size and status code counts for a batch.
 
     Args:
-        line (str): A single log line.
-        total_file_size (int): Total size of files.
-        status_counts (dict): Dictionary containing counts of different status codes.
+        lines (list): List of log lines to process.
 
     Returns:
-        tuple: A tuple containing the updated total file size and status code counts.
+        tuple: A tuple containing the total file size and a dictionary of status code counts for the batch.
     """
-    parts = line.split()
+    total_file_size = 0
+    status_counts = {'200': 0, '301': 0, '400': 0, '401': 0, '403': 0, '404': 0, '405': 0, '500': 0}
 
-    if len(parts) >= 7:
-        file_size = int(parts[-1])
-        total_file_size += file_size
-        status_code = parts[-2]
-        if status_code in status_counts:
-            status_counts[status_code] += 1
+    for line in lines:
+        parts = line.split()
+        if len(parts) >= 7:
+            file_size = int(parts[-1])
+            total_file_size += file_size
+            status_code = parts[-2]
+            if status_code in status_counts:
+                status_counts[status_code] += 1
     
     return total_file_size, status_counts
 
