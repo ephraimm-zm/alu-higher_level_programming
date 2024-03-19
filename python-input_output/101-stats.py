@@ -7,20 +7,29 @@ import sys
 
 def process_log(lines):
     """
-    Process the log lines and compute total file size and status code counts.
+    Process the log lines and compute totals
 
     Args:
         lines (list): List of log lines to process.
 
     Returns:
-        tuple: A tuple containing the total file size and a dictionary of status code counts.
+        tuple: A tuple containing the totals
     """
     total_file_size = 0
-    status_counts = {'200': 0, '301': 0, '400': 0, '401': 0, '403': 0, '404': 0, '405': 0, '500': 0}
+    status_counts = {
+            '200': 0,
+            '301': 0,
+            '400': 0,
+            '401': 0,
+            '403': 0,
+            '404': 0,
+            '405': 0,
+            '500': 0
+            }
 
     for line in lines:
         parts = line.split()
-        if len(parts) >= 10:
+        if len(parts) >= 7:
             file_size = int(parts[-1])
             total_file_size += file_size
             status_code = parts[-2]
@@ -31,11 +40,11 @@ def process_log(lines):
 
 def print_stats(total_file_size, status_counts):
     """
-    Print the statistics including total file size and status code counts.
+    Print the statistics including totals.
 
     Args:
         total_file_size (int): Total size of files.
-        status_counts (dict): Dictionary containing counts of different status codes.
+        status_counts (dict): Dictionary containing totsld
     """
     print(f"File size: {total_file_size}")
     for status_code, count in status_counts.items():
@@ -43,7 +52,7 @@ def print_stats(total_file_size, status_counts):
 
 def main():
     """
-    Main function to read log lines from standard input, process them, and print statistics.
+    Main function to read log lines from standard input
     """
     lines = []
     try:
