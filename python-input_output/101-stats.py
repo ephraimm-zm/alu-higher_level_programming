@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """
-Script for task 14
+Script reads log entries from stdin and calculates various items
 """
+
+
 import sys
 
 
