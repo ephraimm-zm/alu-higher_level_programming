@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module for task 10
+Module for task 11
 """
 
 
@@ -36,3 +36,16 @@ class Student:
                 if hasattr(self, attr):
                     result[attr] = getattr(self, attr)
             return result
+
+    def reload_from_json(self, json):
+        """
+        Repleaces all attributes of the Student instance.
+
+        Args:
+            json (dict): Dictionary containing attribute names and
+            their corresponding values. The key will be the attribute
+            name and the value will be the value of the attribute
+        """
+        for key, value in json.items():
+            setattr(self, key, value)
+
