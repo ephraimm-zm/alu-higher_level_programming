@@ -27,7 +27,7 @@
 - [2-remove_database.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/2-remove_database.sql) - Script to delete a database in MySQL server
 - [3-list_tables.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/3-list_tables.sql) - Script to list all tables of a database
 - [4-first_table.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/4-first_table.sql) - Script to create a table in the current database
-- [5-full_table.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/5-full_table.sql)
+- [5-full_table.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/5-full_table.sql) - Script that prints full description of a table from the current database
 - [6-list_values.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/6-list_values.sql) - Script to list all rows of a table from a specific database
 - [7-insert_value.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/7-insert_value.sql) - Script to insert a new row with id and name in a specific table in a database
 - [8-count_89.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/8-count_89.sql) - Script to display the number of records with a specific id
@@ -36,4 +36,10 @@
 - [11-best_score.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/11-best_score.sql) - Script that lists all records with a score greater than or equal to 10, in desceinding order
 - [12-no_cheating.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/12-no_cheating.sql) - Script that updates the score of Bob to 10 in a table
 - [13-change_class.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/13-change_class.sql) - Script that removes all records with a score less than or equal to 5 from a table in a database
-
+- [14-average.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/14-average.sql) - Script to compute the average score of all the records in the table
+- [15-groups.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/15-groups.sql) - Script to count the number of records with the same score in a specific tabl
+- [16-no_link.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/16-no_link.sql) - Script to list all records of a specific table
+- [100-move_to_utf8.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/100-move_to_utf8.sql) - Script to convert a database in the MySQL server to UTF8
+- [101-avg_temperatures.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/101-avg_temperatures.sql) - Script that displays the avg temp in Fahrenheit by city ordered in descending order by temperature
+- [102-top_city.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/102-top_city.sql) - Script to display the top 3 cities with the highest temperature through the month of July to August
+- [103-max_state.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/103-max_state.sql) - Script to display the max temperature of each state ordered by state name
