@@ -20,3 +20,20 @@
 - All SQL keywords should be in uppercase (SELECT, WHERE…)
 - A README.md file, at the root of the folder of the project, is mandatory
 - The length of your files will be tested using wc
+
+## Description Of Tasks
+- [0-list_databases.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/0-list_databases.sql) - Script to list all databases of MySQL server
+- [1-create_database_if_missing.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/1-create_database_if_missing.sql) - Script to create database in MySQL server
+- [2-remove_database.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/2-remove_database.sql) - Script to delete a database in MySQL server
+- [3-list_tables.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/3-list_tables.sql) - Script to list all tables of a database
+- [4-first_table.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/4-first_table.sql) - Script to create a table in the current database
+- [5-full_table.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/5-full_table.sql)
+- [6-list_values.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/6-list_values.sql) - Script to list all rows of a table from a specific database
+- [7-insert_value.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/7-insert_value.sql) - Script to insert a new row with id and name in a specific table in a database
+- [8-count_89.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/8-count_89.sql) - Script to display the number of records with a specific id
+- [9-full_creation.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/9-full_creation.sql) - Script that creates a table in the current database and adds multiple rows with the values id, name and score
+- [10-top_score.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/10-top_score.sql) - Script to display the score and name of all records in a table in descending order
+- [11-best_score.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/11-best_score.sql) - Script that lists all records with a score greater than or equal to 10, in desceinding order
+- [12-no_cheating.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/12-no_cheating.sql) - Script that updates the score of Bob to 10 in a table
+- [13-change_class.sql](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/SQL_introduction/13-change_class.sql) - Script that removes all records with a score less than or equal to 5 from a table in a database
+
