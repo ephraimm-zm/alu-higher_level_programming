@@ -5,7 +5,6 @@ ALTER DATABASE hbtn_0c_0
 
 -- Convert the table to UTF8
 ALTER TABLE hbtn_0c_0.first_table 
-    CONVERT TO CHARACTER SET utf8mb4 
     COLLATE utf8mb4_unicode_ci;
 
 -- Modify the collation of the name field to utf8mb4_unicode_ci
