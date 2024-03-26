@@ -1,5 +1,5 @@
 -- Script to list all genres not linked to the show Dexter
-SELECT DISTINCT tv_genres.id, tv_genres.name
+SELECT DISTINCT tv_genres.name
 FROM tv_genres
 LEFT JOIN (
 	SELECT tv_genres.id
