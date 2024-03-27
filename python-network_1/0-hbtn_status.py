@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 """Python script to fetch using urllib"""
+
 import urllib.request
 
 with urllib.request.urlopen("https://alu-intranet.hbtn.io/status") as response:
-	content = response.read()
+    content = response.read()
 
 print("Body response:")
 print(f"\t- type: {type(content)}")
