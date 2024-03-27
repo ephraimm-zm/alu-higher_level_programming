@@ -1,12 +1,16 @@
 #!/usr/bin/python3
-"""Python script to fetch using urllib"""
-
+"""Fetches https://alu-intranet.hbtn.io/status"""
 import urllib.request
 
-with urllib.request.urlopen("https://alu-intranet.hbtn.io/status") as response:
-    content = response.read()
+url = 'https://intranet.hbtn.io/status'
+if url.startswith('https://'):
+    url = "https://alu-intranet.hbtn.io/status"
 
-print("Body response:")
-print(f"\t- type: {type(content)}")
-print(f"\t- content: {content}")
-print(f"\t- utf8 content: {content.decode('utf-8')}")
+if __name__ == "__main__":
+    req = urllib.request.Request(url)
+    with urllib.request.urlopen(req) as response:
+        content = response.read()
+        print("Body response:")
+        print("\t- type:", type(content))
+        print("\t- content:", content)
+        print("\t- utf8 content:", content.decode("utf-8"))
