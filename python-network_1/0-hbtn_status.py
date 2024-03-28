@@ -10,6 +10,9 @@ import urllib.request
 url = "https://alu-intranet.hbtn.io/status"
 
 if __name__ == "__main__":
+"""
+Script to execute
+"""
 
 	# Fetch the URL and process the response
 	with urllib.request.urlopen(url) as response:
