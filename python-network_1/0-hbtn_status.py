@@ -4,11 +4,12 @@ Fetches https://alu-intranet.hbtn.io/status
 """
 import urllib.request
 
-"""Main"""
-with urllib.request.urlopen("https://alu-intranet.hbtn.io/status") as response:
-    content = response.read()
 
-print("Body response:")
-print(f"\t- type: {type(content)}")
-print(f"\t- content: {content}")
-print(f"\t- utf8 content: {content.decode('utf-8')}")
+url = "https://alu-intranet.hbtn.io/status"
+
+with urllib.request.urlopen(url) as response:
+	body = response.read()
+	print("Body resopnse:")
+	print("\t- type:", type(body))
+	print("\t- content:", body)
+	print("\t- utf8 content:", body.decode('utf-8))
