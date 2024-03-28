@@ -5,9 +5,7 @@ This module sends a request to a specified URL and displays the value of X-Reque
 import urllib.request
 import sys
 
-url = sys.argv[1]
-
 if __name__ == "__main__":
-    req = urllib.request.Request(url)
+    req = urllib.request.Request(sys.argv[1])
     with urllib.request.urlopen(req) as response:
         print(response.getheader("X-Request-Id"))
