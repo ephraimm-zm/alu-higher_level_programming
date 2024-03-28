@@ -1,7 +1,10 @@
 #!/usr/bin/python3
-"""Fetches https://alu-intranet.hbtn.io/status"""
+"""
+Fetches https://alu-intranet.hbtn.io/status
+"""
 import urllib.request
 
+"""Main"""
 with urllib.request.urlopen("https://alu-intranet.hbtn.io/status") as response:
     content = response.read()
 
