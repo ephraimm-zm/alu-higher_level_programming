@@ -6,6 +6,7 @@ import sys
 import urllib.request
 import urllib.error
 
+
 if __name__ == "__main__":
     try:
         req = urllib.request.Request(sys.argv[1])
