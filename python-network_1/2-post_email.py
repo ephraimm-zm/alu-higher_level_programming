@@ -15,4 +15,4 @@ documentaion bloody
     req = urllib.request.Request(url, data=email.encode('utf-8'))
 
     with urllib.request.urlopen(req) as response:
-        print(response.read().decode('utf-8')
+        print(response.read().decode('utf-8'))
