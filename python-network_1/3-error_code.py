@@ -3,12 +3,11 @@
 Take a URL, send request, display body decoded in utf-8
 Usage: ./3-error_code <URL>
 """
-import sys
-import urllib.request
-import urllib.error
 
 
 if __name__ == "__main__":
+    import sys
+    import urllib.request, error
     req = urllib.request.Request(sys.argv[1])
     try:
         with urllib.request.urlopen(req) as response:
