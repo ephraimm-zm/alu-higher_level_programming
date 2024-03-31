@@ -5,9 +5,9 @@ Usage: ./3-error_code <URL>
 """
 
 
+import sys
+from urllib import request, error
 if __name__ == "__main__":
-    import sys
-    from urllib import request, error
 
     try:
         with request.urlopen(sys.argv[1]) as resq:
