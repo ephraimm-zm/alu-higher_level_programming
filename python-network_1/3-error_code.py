@@ -3,8 +3,6 @@
 Take a URL, send request, display body decoded in utf-8
 Usage: ./3-error_code <URL>
 """
-
-
 import sys
 import urllib.request
 import urllib.error
