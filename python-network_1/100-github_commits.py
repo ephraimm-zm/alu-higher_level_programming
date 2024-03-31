@@ -10,6 +10,6 @@ if __name__ == "__main__":
 
     repo = sys.argv[1]
     repo = sys.argv[2]
-    url = f"https://api.github.com/repos/{user}/{repo}/commits"
+    url = "https://api.github.com/repos/{}/{}/commits".format(user, repo)
 
 
