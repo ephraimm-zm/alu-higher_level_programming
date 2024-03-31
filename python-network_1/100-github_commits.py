@@ -9,7 +9,7 @@ import sys
 if __name__ == "__main__":
 
     repo = sys.argv[1]
-    repo = sys.argv[2]
+    user = sys.argv[2]
     url = "https://api.github.com/repos/{}/{}/commits".format(user, repo)
 
     response = requests.get(url)
