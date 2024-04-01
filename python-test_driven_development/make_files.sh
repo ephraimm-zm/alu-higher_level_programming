@@ -19,11 +19,13 @@ files=(
 
 for file in "${files[@]}"; do
     if [[ $file == *.py ]]; then
-        touch "$file"
-        echo '#!/usr/bin/python3' > "$file"
-        chmod +x "$file"
+        if [[ ! -e $file ]]; then
+            touch "$file"
+            echo '#!/usr/bin/python3' > "$file"
+            chmod +x "$file"
+        fi
     elif [[ $file == *.txt ]]; then
-        touch "text/$file"
+        touch "tests/$file"
     fi
 done
 
