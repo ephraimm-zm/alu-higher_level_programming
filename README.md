@@ -12,6 +12,8 @@
 - [python-input_output](https://github.com/ephraimm-zm/alu-higher_level_programming/tree/main/python-input_output) - Project to understand inputting and outputting files in python
 - [SQL_Introduction](https://github.com/ephraimm-zm/alu-higher_level_programming/tree/main/SQL_introduction#learning-objectives) - Introduction to databases and SQL
 - [SQL_more_queries](https://github.com/ephraimm-zm/alu-higher_level_programming/tree/main/SQL_more_queries#learning-objectives) - Deeper dive into SQL queries
+- [python-network_0](https://github.com/ephraimm-zm/alu-higher_level_programming/tree/main/python-network_0#learning-objectives) - Introdution to URL handling in python using the urllib package
+- [python-network_1](https://github.com/ephraimm-zm/alu-higher_level_programming/tree/main/python-network_1#learning-objectives) - Deeper dive to URL handling in python now using requests package
 # Requirements
 ## Python Scripts
 - Allowed editors: vi, vim, emacs
