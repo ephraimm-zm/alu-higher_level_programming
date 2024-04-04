@@ -1,4 +1,4 @@
-## Learning Objectives
+i# Learning Objectives
 - How to fetch internet resources ith the Python package urllib
 - How to decode urllib body response
 - How to use the Python package requests #requestsiswaysimplerthanurllib
@@ -21,6 +21,7 @@
 - A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
 - Your code should not be executed when imported (by using if __name__ == "__main__":)
 
+<<<<<<< HEAD
 ## Desription Of Tasks
 - [0-hbtn_status.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-network_1/0-hbtn_status.py) - Script to fetch a url and display body of response
 - [1-hbtn_header.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-network_1/1-hbtn_header.py) - Script to take URL, sends request and display value of X-Request-Id variable found in header of response
@@ -30,3 +31,17 @@
 - [5-hbtn_header.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-network_1/5-hbtn_header.py) - Script to take URL, send request and display value of variable X-Request-Id using the requests package
 - [6-post_email.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-network_1/6-post_email.py) - Script to take URL and email, send POST request with eail as param, then display body of response using requests package
 - [7-error_code.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-network_1/7-error_code.py) - 
+=======
+cription Of Tasks
+- [0-hbtn_status.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-network_1/0-hbtn_status.py) - Fetch a url and display body of response using urllib package
+- [1-hbtn_header.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-network_1/1-hbtn_header.py) - Send a request to a URL and display value of X-Request-Id using urllib package
+- [2-post_email.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-network_1/2-post_email.py) - Using the urllib package, send POST request to URL passed as first argument with the email passed as second argument as a param. Display the body of the response decoded in utf-8
+- [3-error_code.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-network_1/3-error_code.py) - Send a request to the URL passed as the first argument and display body of response. If HTTPError, print error code
+- [4-hbtn_status.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-network_1/4-hbtn_status.py) - Fetch a url using the requests package
+- [5-hbtn_header.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-network_1/5-hbtn_header.py) - Using the requests package, take URL, send a request, display value of X-Request-Id
+- [6-post_email.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-network_1/6-post_email.py) - Take URL and email, send POST request with email as param and display body of response
+- [7-error_code.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-network_1/7-error_code.py) - Take URL, send request and display body of response. If HTTP status code greater than 400, print the error code
+- [8-json_api.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-network_1/8-json_api.py) - Take letter in argv[1], send POST request to url with letter as param, display 'id' and 'name' from body. If the body response is not valid JSON or the JSON is empty, display error message
+- [10-my_github.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-network_1/10-my_github.py) - Script to take GitHub username and password, then send request to GitHub API and display 'id' fro response
+- [100-github_commits.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-network_1/100-github_commits.py) - Script to take GitHub repository name and owner name, then sends request to GitHub API and then display last 10 commits from owner in desc order
+>>>>>>> 4610e0fd18a49a66689b3d6f9bb0a91edbc79d04
