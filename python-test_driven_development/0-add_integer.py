@@ -3,6 +3,7 @@
 This module provides funtion for adding two integers
 """
 
+
 def add_integer(a, b=98):
     """
     Adds two integers
@@ -13,14 +14,10 @@ def add_integer(a, b=98):
     Raises:
     TypeError: If either a or b cannot be cast to an int
     """
-    try:
-        a = int(a)
-    except:
+    if type(a) not in (int, float):
         raise TypeError('a must be an integer')
 
-    try:
-        b = int(b)
-    except:
+    if type(b) not in (int, float):
         raise TypeError('b must be an integer')
 
-    return a + b
+    return int(a) + int(b)
