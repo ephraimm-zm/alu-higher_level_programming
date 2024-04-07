@@ -15,8 +15,16 @@ def text_indentation(text):
         raise TypeError("text must be a string")
 
     result = ""
+    skip_space = False
     for char in text:
         result += char
         if char in ['.', '?', ':']:
             result += '\n\n'
+            skip_space = True
+
+        elif char.isspace() and skip_space:
+            continue
+        else:
+            skip_space = False
+
     print(result.strip(), end="")
