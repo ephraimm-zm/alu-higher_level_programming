@@ -34,9 +34,6 @@ def matrix_divided(matrix, div):
     if div == 0:
         raise ZeroDivisionError('division by zero')
 
-    if any(not row for row in matrix):
-        raise TypeError('matrix must be a matrix (list of lists) of integers/floats')
-
     result = [[round(item / div, 2) for item in row] for row in matrix]
 
     return result
