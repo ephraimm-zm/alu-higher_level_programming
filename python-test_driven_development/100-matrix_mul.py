@@ -43,7 +43,7 @@ def matrix_mul(m_a, m_b):
             total = 0
             for k in range(len(m_b)):
                 total += m_a[i][k] * m_b[k][j]
-                row.append(total)
-            result_matrix.append(row)
+            row.append(total)
+        result_matrix.append(row)
 
     return result_matrix
