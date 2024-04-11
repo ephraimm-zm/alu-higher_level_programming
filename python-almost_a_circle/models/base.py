@@ -7,7 +7,6 @@ Module for class that will Base of other classes
 class Base:
     """
     Base class for other classes.
-    
     Atribues:
         __nb_objects (int): Number of objects created.
         id (int): Identifier for the object
