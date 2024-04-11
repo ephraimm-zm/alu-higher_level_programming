@@ -12,7 +12,7 @@ class Base:
         __nb_objects (int): Number of objects created.
         id (int): Identifier for the object
     """
-    __nb_object = 0
+    __nb_objects = 0
 
     def __init__(self, id=None):
         """
