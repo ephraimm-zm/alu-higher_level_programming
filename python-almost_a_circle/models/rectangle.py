@@ -44,7 +44,7 @@ class Rectangle(Base):
         Args:
             value (int): The new width value
         """
-        if not type(value) != int:
+        if type(value) != int:
             raise TypeError("width must be an integer")
         if value <= 0:
             raise ValueError("width must be > 0")
