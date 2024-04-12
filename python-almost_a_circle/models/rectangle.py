@@ -4,7 +4,7 @@ Module for Rectangle class that inherits from Base
 """
 
 
-from models.base import base
+from models import base
 
 class Rectangle(Base):
     """
