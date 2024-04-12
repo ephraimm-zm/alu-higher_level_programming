@@ -33,7 +33,7 @@ class Rectangle(Base):
     @property
     def width(self):
         """int: The width of the rectangle"""
-        return self.width
+        return self__.width
 
     @width.setter
     def width(self, value):
@@ -48,7 +48,7 @@ class Rectangle(Base):
     @property
     def height(self):
         """int: The height of the rectangle."""
-        return self.height
+        return self.__height
 
     @height.setter
     def height(self, value):
@@ -58,12 +58,12 @@ class Rectangle(Base):
         Args:
             value (int): The new height value
         """
-        self.height = value
+        self.__height = value
 
     @property
     def x(self):
         """int: the x cordinate for top left of rectangle"""
-        return self.x
+        return self__.x
 
     @x.setter
     def x(self, value):
@@ -73,12 +73,12 @@ class Rectangle(Base):
         Args:
             value(int): The new x-cordinate value
         """
-        self.x = value
+        self.__x = value
 
     @property
     def y(self):
         """The y cordinate of top left rectangle"""
-        return self.y
+        return self.__y
 
     @y.setter
     def y(self, value):
@@ -88,4 +88,4 @@ class Rectangle(Base):
         Args:
             value (int): The new y cordinate value
         """
-        self.y = value
+        self.__y = value
