@@ -1,10 +1,10 @@
-#!/usr/bin/python3
+#!/usr/bini/python3
 """
 Module for Rectangle class that inherits from Base
 """
 
 
-from models import base
+from models import Base
 
 class Rectangle(Base):
     """
