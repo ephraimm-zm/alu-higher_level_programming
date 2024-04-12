@@ -69,7 +69,7 @@ class Rectangle(Base):
     @x.setter
     def x(self, value):
         """
-        Sets the x cordinate of top left of rectangle     
+        Sets the x cordinate of top left of rectangle
         Args:
             value(int): The new x-cordinate value
         """
