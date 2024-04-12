@@ -43,7 +43,7 @@ class Rectangle(Base):
         Args:
             value (int): The new width value
         """
-        self.width = value
+        self.__width = value
 
     @property
     def height(self):
