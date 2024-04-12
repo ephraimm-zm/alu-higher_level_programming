@@ -82,7 +82,7 @@ class Rectangle(Base):
             value(int): The new x-cordinate value
         """
         if not isinstance(value, int):
-            raise TypeError("x must be and integer")
+            raise TypeError("x must be an integer")
         if value < 0:
             raise ValueError("x must be >= 0")
         self.__x = value
