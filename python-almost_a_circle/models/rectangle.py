@@ -6,6 +6,7 @@ Module for Rectangle class that inherits from Base
 
 from models.base import Base
 
+
 class Rectangle(Base):
     """
     A class representing a rectangle
@@ -68,8 +69,7 @@ class Rectangle(Base):
     @x.setter
     def x(self, value):
         """
-        Sets the x cordinate of top left of rectangle
-        
+        Sets the x cordinate of top left of rectangle     
         Args:
             value(int): The new x-cordinate value
         """
