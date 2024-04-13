@@ -41,4 +41,8 @@
 - [5-text_indentation.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-test_driven_development/5-text_indentation.py) - A function that should take in text, and print it with 2 new lines after '.', '?', or ':'
 - [tests/5-text_indentation.txt](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-test_driven_development/tests/5-text_indentation.txt) - Test cases for 5-text_indentation
 - [tests/6-max_integer_test.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-test_driven_development/tests/6-max_integer_test.py) - Test cases for the max_integer fucntion written using the unittest module
+- [100-matrix_mul.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-test_driven_development/100-matrix_mul.py) - A function that's supposed to take two matrices, validate them and then multiply them
+- [tests/100-matrix_mul.txt](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-test_driven_development/tests/100-matrix_mul.txt) - Test cases for 100-matrix_mul.py
+- [101-lazy_matrix_mul.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-test_driven_development/101-lazy_matrix_mul.py) - A function that is suppsed to multiply two matrices using the NumPy library
+- [tests/101-lazy_matrix_mul.txt](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-test_driven_development/tests/101-lazy_matrix_mul.txt) - Test cases for the 101-lazy_matrix_mul.txt
 
