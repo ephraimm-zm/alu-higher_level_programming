@@ -189,6 +189,3 @@ class Square(Rectangle):
         Override __str__ method to provide string representation
         of square
         """
-        return "[Square] ({}) {}/{} - {}".format(
-                self.id, self.x, self.y, self.size
-                )
