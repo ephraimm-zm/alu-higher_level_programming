@@ -23,7 +23,6 @@ class Square(Rectangle):
             id (int, optional): The ID of the square
         """
         super().__init__(size, size, x, y, id)
-        self.size = size
 
     @property
     def size(self):
@@ -59,17 +58,9 @@ class Square(Rectangle):
             **kwargs (dict): Dictionary of keyword arguments
         """
         if args:
-            self.id = args[0]
-            self.size = args[1]
-            self.x = args[2]
-            self.y = args[3]
+            attrs = ['id', 'size', 'x', 'y']
+            for i, arg in enumerate(args):
+                setattr(self, attrs[i], arg)
         else:
             for key, value in kwargs.items():
-                if key == 'id':
-                    self.id = value
-                elif key == 'size':
-                    self.size = value
-                elif key == 'x':
-                    self.x = value
-                elif key == 'y':
-                    self.y = value
+                setattr(self, key, value)
