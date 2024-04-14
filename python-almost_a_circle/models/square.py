@@ -49,3 +49,27 @@ class Square(Rectangle):
         return "[Square] ({}) {}/{} - {}".format(
                 self.id, self.x, self.y, self.size
                 )
+
+        def update(self, *args, **kwargs):
+            """
+            Updates the square attributes based on arguments given
+
+            Args:
+                *args (list): List of arguments
+                **kwargs (dict): Dictionary of keyword arguments
+            """
+            if args:
+                self.id = args[0]
+                self.size = args[1]
+                self.x = args[2]
+                self.y = args[3]
+            else:
+                for key, value in kwargs.items():
+                    if key == 'id':
+                        self.id = value
+                    elif key == 'size':
+                        self.size = value
+                    elif key == 'x':
+                        self.x = value
+                    elif key == 'y':
+                        self.y = value
