@@ -2,6 +2,7 @@
 """
 Module for class that will Base of other classes
 """
+import csv
 import json
 
 
@@ -112,3 +113,63 @@ class Base:
                 return instances
         except FileNotFoundError:
             return []
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """
+        Serialize a list of objects into a CSV file.
+        Args:
+            list_objs (list): A list of instances from Base.
+        """
+        filename = cls.__name__ + ".csv"
+        with open(filename, 'w', newline='') as file:
+            writer = csv.writer(file)
+            for obj in list_objs:
+                if cls.__name__ == 'Rectangle':
+                    writer.writerow([
+                            obj.id,
+                            obj.width,
+                            obj.height,
+                            obj.x,
+                            obj.y
+                            ])
+                elif cls.__name__ == 'Square':
+                    writer.writerow([
+                        obj.id,
+                        obj.size,
+                        obj.x,
+                        obj.y
+                        ])
+    
+    @classmethod
+    def load_from_file_cs(cls):
+        """
+        Deserialize instances from a csv file.
+        Returns:
+            list: A list of instances loaded from the CSV file.
+        """
+        filename = cls.__name__ + ".csv"
+        instanced = []
+        try:
+            with open(filename, 'r', newline='') as file:
+                reader = csv.reader(file)
+                for row in reader:
+                    if cls.__name__ == 'Rectangle':
+                        instance = cls(
+                                int(row[1]),
+                                int(row[2]),
+                                int(row[3]),
+                                int(row[4]),
+                                int(row[0])
+                                )
+                elif cls.__name__ == 'Square':
+                    instance = cls(
+                            int(row[1]),
+                            int(row[2]),
+                            int(row[3]),
+                            int(row[0])
+                            )
+                instances.append(instance)
+        except FileNotFoundError:
+            pass
+        return instances
