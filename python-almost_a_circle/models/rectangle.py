@@ -130,12 +130,10 @@ class Rectangle(Base):
         Update the rectangle attributes from given args
         *args: Variable number of arguments.
         """
-        if args:
-            self.id = args[0]
-            self.width = args[1]
-            self.height = args[2]
-            self.x = args[3]
-            self.y = args[4]
+        if args is not None and ken(args) is not 0:
+            list_atr = ['id', 'width', 'height', 'x', 'y']
+            for i in range(len(args)):
+                setattr(self, list_atr[i], args[i])
         else:
             for key, value in kwargs.items():
                 if key == 'id':
