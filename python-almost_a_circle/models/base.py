@@ -28,8 +28,8 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
-    @staticmethod
 
+    @staticmethod
     def to_json_string(list_dictionaries):
         """
         Serialize a list of dictionaries into a JSON string
