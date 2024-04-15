@@ -59,4 +59,17 @@ class Base:
                         obj.to_dictionary()
                         for obj in list_objs
                 ]
-                file.write(cls.to_json_string(dictionaries))                
+                file.write(cls.to_json_string(dictionaries))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """
+        Deserialize a JSON string into a list of dictionaries
+        Args:
+            json_string (str): A JSON string
+        Returns:
+            list: A list of dictionaries
+        """
+        if json_string is None or json_string == "":
+            return []
+        return json.loads(json_string)
