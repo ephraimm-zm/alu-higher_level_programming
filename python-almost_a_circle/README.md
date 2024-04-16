@@ -32,3 +32,10 @@
 - All your tests should be executed by using this command: python3 -m unittest discover tests
 - You can also test file by file by using this command: python3 -m unittest tests/test_models/test_base.py
 - We strongly encourage you to work together on test cases so that you don’t miss any edge case
+
+### Description Of Files
+- [models/__init__.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-almost_a_circle/models/__init__.py) - Empty file to make the python folder a package
+- [models/base.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-almost_a_circle/models/base.py) - File containing the project base class
+- [models/rectangle.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-almost_a_circle/models/rectangle.py) - File containing the project rectangle class
+- [models/square.py](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-almost_a_circle/models/square.py) - File containing the project square class
+- [models/make_files.sh](https://github.com/ephraimm-zm/alu-higher_level_programming/blob/main/python-almost_a_circle/models/make_files.sh) - Shell script used to create the projects empty files and give them execute permissions
