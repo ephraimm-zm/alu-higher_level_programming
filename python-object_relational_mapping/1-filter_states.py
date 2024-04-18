@@ -21,7 +21,7 @@ def list_states(username, password, database_name):
     cursor.execute("""
     SELECT *
     FROM states
-    WHERE name LIKE 'N%'
+    WHERE name REGEXP '^N'
     ORDER BY id ASC
     """)
     rows = cursor.fetchall()
