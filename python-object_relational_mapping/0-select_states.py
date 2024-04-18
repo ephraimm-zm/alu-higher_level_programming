@@ -23,9 +23,10 @@ def list_states(username, password, database_name):
     cursor.close()
     conn.close()
 
+
 if __name__ == "__main__":
     """Main function."""
-    username= sys.argv[1]
+    username = sys.argv[1]
     password = sys.argv[2]
     database_name = sys.argv[3]
     list_states(username, password, database_name)
