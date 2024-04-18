@@ -21,7 +21,7 @@ def list_states(username, password, database_name):
     cursor.execute("""
     SELECT *
     FROM states
-    WHERE name REGEXP '^[N]'
+    WHERE name REGEXP '^[Nn]'
     ORDER BY id ASC
     """)
     rows = cursor.fetchall()
