@@ -2,10 +2,9 @@
 """
 Module for task 2
 """
-
-
 import sys
 import MySQLdb
+
 
 def main():
     """
@@ -18,13 +17,13 @@ def main():
 
     connection = MySQLdb.connect(
             host="localhost",
-            user=username,
-            passwd=password,
+            user = username,
+            passwd = password,
             db = database
             )
     cursor = connection.cursor()
     query = """
-    SELECT * 
+    SELECT *
     FROM states
     WHERE name = %s
     ORDER BY id ASC
@@ -39,6 +38,7 @@ def main():
         cursor.close()
     if connection:
         connection.close()
+
 
 if __name__ == "__main__":
     main()
