@@ -4,6 +4,8 @@ Module for task 2
 """
 import sys
 import MySQLdb
+
+
 def main():
     """
     Main function to get state information from the database
@@ -20,7 +22,7 @@ def main():
             db=database
             )
     cursor = connection.cursor()
-    query = """    
+    query = """
     SELECT *
     FROM states
     WHERE name = %s
@@ -34,5 +36,7 @@ def main():
         cursor.close()
     if connection:
         connection.close()
+
+
 if __name__ == "__main__":
     main()
