@@ -20,18 +20,7 @@ def main():
             db=database
             )
     cursor = connection.cursor()
-    query = """
-
-    
-          
-            
-    
-
-          
-          Expand Down
-    
-    
-  
+    query = """    
     SELECT *
     FROM states
     WHERE name = %s
