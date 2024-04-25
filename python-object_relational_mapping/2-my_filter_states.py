@@ -25,9 +25,10 @@ def main():
     query = """
     SELECT *
     FROM states
-    WHERE name = %s COLLATE utf8mb4_general_ci
-    ORDER BY id ASC
-    """
+    WHERE name LIKE BINARY '{}'
+    ORDER BY states.id ASC
+    """.format(state_name)
+
     cursor.execute(query, (state_name,))
     rows = cursor.fetchall()
     for row in rows:
