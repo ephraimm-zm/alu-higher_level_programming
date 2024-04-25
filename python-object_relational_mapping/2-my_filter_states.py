@@ -25,9 +25,10 @@ def main():
     query = """
     SELECT *
     FROM states
-    WHERE name = %s
-    ORDER BY id ASC
-    """
+    WHERE CONVERT(`name` USING Latin1)
+    COLLATE Latin1_General_CS = '{}';
+    """.format(state_name)
+
     cursor.execute(query, (state_name,))
     rows = cursor.fetchall()
 
