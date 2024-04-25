@@ -21,8 +21,9 @@ def list_states(username, password, database_name):
     cursor.execute("""
     SELECT *
     FROM states
-    WHERE name REGEXP '^[Nn]'
-    ORDER BY id ASC
+    WHERE CONVERT (`name` USING Latin1)
+    COLLATE Latin1_General_CS
+    LIKE 'N%';
     """)
     rows = cursor.fetchall()
     for row in rows:
