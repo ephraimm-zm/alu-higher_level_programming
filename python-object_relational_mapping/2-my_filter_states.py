@@ -25,7 +25,7 @@ def main():
     query = """
     SELECT *
     FROM states
-    WHERE name = %s COLLATE utf8_general_ci
+    WHERE name = %s COLLATE utf8mb4_general_ci
     ORDER BY id ASC
     """
     cursor.execute(query, (state_name,))
