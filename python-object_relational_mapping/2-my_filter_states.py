@@ -4,8 +4,6 @@ Module for task 2
 """
 import sys
 import MySQLdb
-
-
 def main():
     """
     Main function to get state information from the database
@@ -23,23 +21,29 @@ def main():
             )
     cursor = connection.cursor()
     query = """
+
+    
+          
+            
+    
+
+          
+          Expand Down
+    
+    
+  
     SELECT *
     FROM states
-    WHERE CONVERT(`name` USING Latin1)
-    COLLATE Latin1_General_CS = '{}';
-    """.format(state_name)
-
+    WHERE name = %s
+    ORDER BY id ASC
+    """
     cursor.execute(query, (state_name,))
     rows = cursor.fetchall()
-
     for row in rows:
         print(row)
-
     if cursor:
         cursor.close()
     if connection:
         connection.close()
-
-
 if __name__ == "__main__":
     main()
