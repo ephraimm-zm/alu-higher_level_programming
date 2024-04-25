@@ -17,9 +17,9 @@ def main():
 
     connection = MySQLdb.connect(
             host="localhost",
-            user = username,
-            passwd = password,
-            db = database
+            user=username,
+            passwd=password,
+            db=database
             )
     cursor = connection.cursor()
     query = """
