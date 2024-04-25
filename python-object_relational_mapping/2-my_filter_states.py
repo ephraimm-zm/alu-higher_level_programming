@@ -25,9 +25,9 @@ def main():
     query = """
     SELECT *
     FROM states
-    WHERE name LIKE BINARY '{}'
+    WHERE name LIKE BINARY %s
     ORDER BY states.id ASC
-    """.format(state_name)
+    """
 
     cursor.execute(query, (state_name,))
     rows = cursor.fetchall()
