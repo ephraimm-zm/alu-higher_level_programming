@@ -17,7 +17,6 @@
 - How to import a file
 
 ## Requirements
-
 - Allowed editors: vi, vim, emacs
 - All your files will be interpreted on Ubuntu 20.04 LTS using node (version 14.x)
 - All your files should end with a new line
