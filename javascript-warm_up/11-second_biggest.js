@@ -7,7 +7,7 @@ if (argv.length === 0) {
 }
 
 if (argv.length === 1) {
-  console.log('1');
+  console.log('0');
   process.exit();
 }
 
