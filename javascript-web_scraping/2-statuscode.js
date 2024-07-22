@@ -1,11 +1,10 @@
 #!/usr/bin/node
-
 const request = require('request');
 const urlPath = process.argv[2];
 
-request.get(urlPath, (error, response, body) => {
+request(urlPath, (error, response) => {
   if (error) {
-    console.error(error);
+    console.log(error);
   } else {
     console.log('code: ' + response.statusCode);
   }
